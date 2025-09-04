@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email List Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #9face6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: #fff;
+            padding: 40px 50px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 400px;
+        }
+        
+        /* Murach Books Logo */
+        .logo {
+            margin-bottom: 30px;
+        }
+        
+        .logo-icon {
+            display: inline-block;
+            position: relative;
+            width: 80px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        
+        .book {
+            position: absolute;
+            width: 20px;
+            height: 50px;
+            background: #c41e3a;
+            border-radius: 2px;
+            transform-origin: bottom;
+        }
+        
+        .book1 {
+            left: 10px;
+            transform: rotateY(-15deg) rotateZ(5deg);
+            background: linear-gradient(145deg, #c41e3a, #a01729);
+        }
+        
+        .book2 {
+            left: 30px;
+            transform: rotateY(0deg);
+            background: linear-gradient(145deg, #d42c47, #c41e3a);
+            z-index: 2;
+        }
+        
+        .book3 {
+            left: 50px;
+            transform: rotateY(15deg) rotateZ(-5deg);
+            background: linear-gradient(145deg, #c41e3a, #a01729);
+        }
+        
+        .book::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background: rgba(255,255,255,0.3);
+            border-radius: 2px 2px 0 0;
+        }
+        
+        .logo-text {
+            font-family: 'Arial', sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            color: #c41e3a;
+            letter-spacing: 2px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background: #6a5acd;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        a:hover {
+            background: #5b4acb;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">
+                <div class="book book1"></div>
+                <div class="book book2"></div>
+                <div class="book book3"></div>
+            </div>
+            <div class="logo-text">MURACH BOOKS</div>
+        </div>
+        <h1>Welcome to the Email List Application</h1>
+        <p>Click below to join our email list:</p>
+        <a href="join.jsp">Join Now</a>
+        <a href="ex5_1.jsp">ex5.1</a>
+        <a href="ex6_1.jsp">ex6.1</a>
+    </div>
+</body>
+</html>
